@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Pelicula - {{ pelicula }}{% endblock %}
+
+{% block header-title %}{{ pelicula }}{% endblock %}
+
+{% block content %}
+<br>
+<p><b>Año: </b>{{ pelicula.year}}</p>
+<h4>Sinopsis</h4>
+<p>{{ pelicula.sinopsis | linebreaks }}</p>
+{% endblock %}
